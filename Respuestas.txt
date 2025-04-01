@@ -1,0 +1,6 @@
+* ¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+    Cuando regresamos al main el archivo con el que habíamos estado trabajando ya no es visible, pues no existe en esta rama.
+
+*  En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
+    En este punto se puede observar que el desarrollo del proyecto ya no es lineal, en cambio, hay una ruta alterna con los cambios realizados en la rama Opcion_2.
+
