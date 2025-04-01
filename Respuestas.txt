@@ -4,3 +4,6 @@
 *  En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
     En este punto se puede observar que el desarrollo del proyecto ya no es lineal, en cambio, hay una ruta alterna con los cambios realizados en la rama Opcion_2.
 
+* En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+    Luego de hacer el primer merge, podemos observar que la división creada anteriormente para separar el contenido de ambas ramas volvió a unirse.
+
