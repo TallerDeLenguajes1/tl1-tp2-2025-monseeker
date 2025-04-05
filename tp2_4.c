@@ -14,12 +14,14 @@ typedef struct {
 
 void cargarStruct (compu arre[], int num);
 void listarPCs(compu pcs[], int cantidad);
+void mostrarMasVieja(compu pcs[], int cantidad);
 
 int main(){
     srand(time(NULL));
     compu arre[M];
     cargarStruct(arre, M);
     listarPCs(arre, M);
+    mostrarMasVieja(arre, M);
 
     return 0;
 }
@@ -43,5 +45,24 @@ void listarPCs(compu pcs[], int cantidad){
         printf("Tipo: %s \n", pcs[i].tipo_cpu);
         printf("\n\n");
     }
+}
+
+void mostrarMasVieja(compu pcs[], int cantidad){
+    int j=0, aux = 2024;
+
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (pcs[i].anio < aux)
+        {
+            aux = pcs[i].anio;
+            j=i;
+        }
+    }
     
+    printf("Auto mas viejo:\n");
+    printf("Velocidad: %d \n", pcs[j].velocidad);
+    printf("Anio: %d \n", pcs[j].anio);
+    printf("Nucleos: %d \n", pcs[j].cantidad_nucleos);
+    printf("Tipo: %s \n", pcs[j].tipo_cpu);
+    printf("\n\n");
 }
