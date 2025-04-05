@@ -13,13 +13,13 @@ typedef struct {
 } compu; 
 
 void cargarStruct (compu arre[], int num);
-void mostrar(compu arre[], int num);
+void listarPCs(compu pcs[], int cantidad);
 
 int main(){
     srand(time(NULL));
     compu arre[M];
     cargarStruct(arre, M);
-    mostrar(arre, M);
+    listarPCs(arre, M);
 
     return 0;
 }
@@ -34,3 +34,14 @@ void cargarStruct (compu arre[], int num){
     }
 }
 
+void listarPCs(compu pcs[], int cantidad){
+    for (int i = 0; i < cantidad; i++)
+    {
+        printf("Velocidad: %d \n", pcs[i].velocidad);
+        printf("Anio: %d \n", pcs[i].anio);
+        printf("Nucleos: %d \n", pcs[i].cantidad_nucleos);
+        printf("Tipo: %s \n", pcs[i].tipo_cpu);
+        printf("\n\n");
+    }
+    
+}
